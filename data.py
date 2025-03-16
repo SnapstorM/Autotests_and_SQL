@@ -3,12 +3,6 @@ headers = {
     "Content-Type": "application/json"
 }
 
-courier_data = {
-    "login": "ninja",
-    "password": "1234",
-    "firstName": "saske"
-}
-
 order_data = {
      "firstName": "Naruto",
     "lastName": "Uchiha",
