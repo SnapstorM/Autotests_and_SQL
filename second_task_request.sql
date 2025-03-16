@@ -1,6 +1,6 @@
 -- Задание 2
 SELECT 
-    track AS track_number,
+    track,
     CASE 
         WHEN finished = TRUE THEN 2
         WHEN cancelled = TRUE THEN -1
