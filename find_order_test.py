@@ -5,7 +5,7 @@ import data
 
 def test_status_code():
 
-    track = scooter_requests.create_order(data.order_data)
+    track = scooter_requests.create_order(data.order_data).json()['track']
     result = scooter_requests.find_order(track)
 
     assert result.status_code == 200
