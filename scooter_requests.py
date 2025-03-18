@@ -4,10 +4,7 @@ import data
 
 def create_order(body): # Создание заказа
 
-    response = requests.post(configuration.URL_SERVICE + configuration.CREATE_ORDER_PATH, json=body, headers=data.headers)
-    track = response.json()['track']
-
-    return track
+    return requests.post(configuration.URL_SERVICE + configuration.CREATE_ORDER_PATH, json=body, headers=data.headers)
 
 def find_order(track): #Поиск заказа
 
